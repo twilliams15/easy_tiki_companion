@@ -14,7 +14,7 @@ import {Rums} from './modules/Rums'
 
 export default function App() {
   const [stock, setStock] = React.useState(
-    window.localStorage.getItem('stock') || ''
+    window.localStorage.getItem('easy_tiki_stock') || ''
   )
   const [displayedDrinks, setDisplayedDrinks] = React.useState(
     getAvailableDrinks(stock)
@@ -35,7 +35,7 @@ export default function App() {
       ? addItemToTempStock()
       : removeItemFromTempStock()
     setStock(tempStock)
-    window.localStorage.setItem('stock', tempStock)
+    window.localStorage.setItem('easy_tiki_stock', tempStock)
     setDisplayedDrinks(getAvailableDrinks(tempStock))
   }
 
@@ -92,7 +92,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Smuggler’s Companion</h1>
+      <h1>Easy Tiki Companion</h1>
       <nav>
         <ul>
           <li onClick={displayInStock}>In Stock</li>
