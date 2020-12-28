@@ -5,31 +5,22 @@ import i from "../../data/all_ingredients"
 import '../../styles.css'
 
 const drink = {
-    name: 'Aku Aku',
-    page: 39,
+    name: 'Donga Punch',
+    page: 61,
     ingredients: [
-        i.misc.pineapple,
-        i.misc.mint,
+        i.rums.aged_martinique,
         i.juices.lime,
-        i.syrups.demerara,
-        i.liqueurs.peach,
-        i.rums.blended_lightly_aged,
+        i.misc.donns_mix,
     ],
-}
+};
 
 const inStock = [
-    i.misc.mint,
-    i.juices.lime,
-    i.syrups.demerara,
-    i.rums.blended_lightly_aged,
+    i.rums.aged_martinique,
+    i.misc.donns_mix,
 ]
 
 before(() => {
     mount(<Drink drink={drink} inStock={inStock} />)
-})
-
-it('looks the same as it did last time', () => {
-    cy.percySnapshot('Drink')
 })
 
 it('renders a title, page number, and list of ingredients', () => {

@@ -12,32 +12,36 @@ describe('keeping stock', () => {
 
   it('stores stock in local storage', () => {
     cy.get('.accordion').click()
-    cy.get('#herbstura')
+    cy.get('#orgeat')
       .check()
       .then(() => {
-        expect(localStorage.getItem('stock')).to.equal('herbstura')
+        expect(localStorage.getItem('easy_tiki_stock')).to.equal('orgeat')
       })
   })
 
   it('reads stock from local storage', () => {
-    localStorage.setItem('stock', 'herbstura')
+    localStorage.setItem('easy_tiki_stock', 'orgeat')
     cy.reload()
     cy.get('.accordion').click()
-    cy.get('#herbstura').should('be.checked')
+    cy.get('#orgeat').should('be.checked')
   })
 
   it('search by stock returns correct drinks', () => {
     cy.get('.accordion').click()
+    cy.contains('orange juice').click()
     cy.contains('lime juice').click()
-    cy.contains('demerara syrup').click()
-    cy.contains('allspice dram').click()
-    cy.contains('blended aged rum (3)').click()
-    cy.contains('angostura bitters').click()
+    cy.contains('donn\'s spices #2').click()
+    cy.contains('cane syrup').click()
+    cy.contains('cinnamon syrup').click()
+    cy.contains('honey syrup').click()
+    cy.contains('passion fruit syrup').click()
+    cy.contains('aged blended rum').click()
+    cy.contains('unaged blended rum').click()
+    cy.contains('demerara rum').click()
     cy.get('.drink')
-      .should('have.length', 3)
-      .and('include.text', 'Planter’s Punch')
-      .and('include.text', 'Bombo')
-      .and('include.text', 'Barbados Rum Punch')
+      .should('have.length', 2)
+      .and('include.text', 'Nui Nui')
+      .and('include.text', 'Puka-Puka Punch')
   })
 })
 
@@ -47,26 +51,19 @@ describe('searching for drinks', () => {
   })
 
   it('search for drink returns correct drink', () => {
-    cy.get('#drinkName').type('zom')
-    cy.get('.drink').should('have.length', 1).and('include.text', 'Zombie')
+    cy.get('#drinkName').type('donga')
+    cy.get('.drink').should('have.length', 1).and('include.text', 'Donga Punch')
   })
 
   it('search for ingredient returns correct drinks', () => {
-    cy.get('#ingredient').type('spark')
+    cy.get('#ingredient').type('passion')
     cy.get('.drink')
       .each((d) => d.children())
-      .should('include.text', 'sparkling')
-  })
-
-  it('search for rum number returns correct drinks', () => {
-    cy.get('#rum').select('8')
-    cy.get('.drink')
-      .each((d) => d.children())
-      .should('include.text', 'cane aoc martinique rhum agricole vieux (8)')
+      .should('include.text', 'passion fruit')
   })
 })
 
-describe('insights', () => {
+describe.skip('insights', () => {
   beforeEach(() => {
     cy.get('.accordion').click()
     cy.contains('lime juice').click()
