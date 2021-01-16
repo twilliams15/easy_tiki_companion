@@ -1,6 +1,7 @@
 export default {
   juices: {
     lime: 'lime juice',
+    grapefruit: 'grapefruit juice',
     white_grapefruit: 'white grapefruit juice',
     lemon: 'lemon juice',
     pineapple: 'pineapple juice',
@@ -16,13 +17,18 @@ export default {
     cane: 'cane syrup',
     orgeat: 'orgeat',
     demerara: 'demerara syrup',
+    ginger: 'ginger syrup',
+    coconut_cream: 'coconut cream',
   },
   liqueurs: {
     peach: 'peach liqueur',
     maraschino: 'maraschino liqueur',
     swedish_punsch: 'swedish punsch',
     curacao: 'curaçao',
-    allspice: 'allspice liqueur'
+    allspice: 'allspice liqueur',
+    coconut: 'coconut liqueur',
+    banana: 'banana liqueur',
+    falernum: 'falernum',
   },
   spirits: {
     absinthe: 'absinthe',
@@ -31,10 +37,15 @@ export default {
     london_dry_gin: 'london dry gin',
     bourbon: 'bourbon',
     mezcal: 'mezcal',
+    vodka: 'vodka',
+    sloe: 'sloe gin',
+    tequila: 'tequila',
   },
   wines: {
     amontillado: 'amontillado sherry',
     manzanilla: 'manzanilla sherry',
+    fino: 'fino sherry',
+    byrrh: 'byrrh aromatized wine',
   },
   rums: {
     aged_martinique: 'aged martinique rum',
@@ -42,15 +53,19 @@ export default {
     aged_puerto_rican: 'aged puerto rican rum',
     aged_blended: 'aged blended rum',
     unaged_martinique: 'unaged martinique rum',
+    unaged_puerto_rican: 'unaged puerto rican rum',
+    unaged_haitian: 'unaged haitian rum',
     unaged_blended: 'unaged blended rum',
     overproof_aged_puerto_rican: 'overproof aged puerto rican rum',
     overproof_demerara: 'overproof demerara rum',
     demerara: 'demerara rum',
     spiced: 'spiced rum',
     pineapple: 'pineapple rum',
+    barbados: 'barbados rum',
   },
   bitters: {
     angostura: 'angostura bitters',
+    orange: 'orange bitters',
   },
   misc: {
     donns_mix: 'donn\'s mix',
@@ -60,5 +75,11 @@ export default {
     mint: 'mint leaves',
     passion: 'passion fruit purée',
     orange: 'orange wedge',
+    soda: 'soda water',
+    sparkling_water: 'sparkling water',
+    coconut_water: 'coconut water',
+    coconut_soda: 'coconut soda',
+    sugar: 'sugar',
+    salt: 'salt',
   },
 }
