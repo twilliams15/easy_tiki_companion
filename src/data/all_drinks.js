@@ -195,7 +195,7 @@ export default [
       i.juices.pineapple,
       i.juices.lime,
       i.syrups.passion_fruit,
-      i.syrups.demerara
+      i.syrups.demerara,
     ],
   },
   {
@@ -217,7 +217,7 @@ export default [
       i.juices.lemon,
       i.wines.manzanilla,
       i.syrups.orgeat,
-      i.syrups.passion_fruit
+      i.syrups.passion_fruit,
     ],
   },
   {
@@ -320,7 +320,7 @@ export default [
       i.juices.lemon,
       i.liqueurs.falernum,
       i.syrups.simple,
-      i.bitters.angostura
+      i.bitters.angostura,
     ],
   },
   {
@@ -507,8 +507,184 @@ export default [
     ],
   },
   {
-    name: '',
-    page: 1,
-    ingredients: [],
+    name: 'A Coy Decoy',
+    page: 129,
+    ingredients: [
+      i.spirits.london_dry_gin,
+      i.spirits.cucumber_gin,
+      i.liqueurs.grapefruit,
+      i.juices.pineapple,
+      i.juices.lime,
+      i.bitters.bittermens_boston,
+    ],
+  },
+  {
+    name: 'Bitter Mai Tai',
+    page: 130,
+    ingredients: [
+      i.liqueurs.campari,
+      i.rums.aged_jamaican,
+      i.liqueurs.curacao,
+      i.syrups.orgeat,
+      i.juices.lime,
+    ],
+  },
+  {
+    name: 'Mai Sha Roa Na',
+    page: 132,
+    ingredients: [
+      i.rums.overproof_aged_jamaican,
+      i.liqueurs.banana,
+      i.syrups.macadamia,
+      i.juices.lime,
+    ],
+  },
+  {
+    name: 'Kentucky Mai Tai',
+    page: 133,
+    ingredients: [
+      i.spirits.bourbon,
+      i.spirits.mezcal,
+      i.liqueurs.cynar,
+      i.liqueurs.peach,
+      i.juices.lemon,
+      i.syrups.orgeat,
+    ],
+  },
+  {
+    name: 'Breakfast Mai Tai',
+    page: 135,
+    ingredients: [
+      i.rums.overproof_aged_jamaican,
+      i.liqueurs.banana,
+      i.syrups.orgeat,
+      i.syrups.cinnamon,
+      i.juices.lime,
+      i.rums.black,
+    ],
+  },
+  {
+    name: 'Caribe Daiquiri',
+    page: 136,
+    ingredients: [
+      i.rums.unaged_puerto_rican,
+      i.juices.pineapple,
+      i.juices.lime,
+      i.misc.sugar,
+    ],
+  },
+  {
+    name: 'Circe',
+    page: 138,
+    ingredients: [
+      i.spirits.arrack,
+      i.rums.overproof_aged_jamaican,
+      i.wines.manzanilla,
+      i.liqueurs.elderflower,
+      i.syrups.ginger,
+      i.juices.lemon,
+    ],
+  },
+  {
+    name: 'Tropic of Capricorn',
+    page: 139,
+    ingredients: [
+      i.rums.green_tea,
+      i.liqueurs.banana,
+      i.juices.lime,
+      i.syrups.cane,
+      i.liqueurs.fernet,
+    ],
+  },
+  {
+    name: 'Jamaican Mule',
+    page: 141,
+    ingredients: [
+      i.rums.aged_jamaican,
+      i.syrups.ginger,
+      i.juices.lime,
+      i.juices.pineapple,
+      i.bitters.angostura,
+    ],
+  },
+  {
+    name: 'Makalapa',
+    page: 142,
+    ingredients: [
+      i.rums.aged_blended,
+      i.juices.lime,
+      i.juices.grapefruit,
+      i.syrups.hibiscus,
+      i.misc.soda,
+    ],
+  },
+  {
+    name: 'Sleeping Lotus',
+    page: 145,
+    ingredients: [
+      i.spirits.gin,
+      i.syrups.orgeat,
+      i.juices.lemon,
+      i.bitters.orange,
+      i.misc.mint,
+    ],
+  },
+  {
+    name: 'Jah Rule',
+    page: 146,
+    ingredients: [
+      i.rums.cachaca,
+      i.rums.aged_jamaican,
+      i.liqueurs.luxardo,
+      i.juices.lime,
+      i.spirits.absinthe,
+    ],
+  },
+  {
+    name: 'Island to Islay Punch',
+    page: 147,
+    ingredients: [
+      i.rums.barbados,
+      i.spirits.scotch,
+      i.juices.passion,
+      i.syrups.cinnamon,
+      i.juices.lime,
+      i.bitters.bittermens_elemakule
+    ],
+  },
+  {
+    name: 'Austral Summer',
+    page: 148,
+    ingredients: [
+      i.spirits.brandy,
+      i.spirits.whiskey,
+      i.juices.lemon,
+      i.liqueurs.coconut,
+      i.liqueurs.green_chartreuse,
+      i.bitters.angostura,
+    ],
+  },
+  {
+    name: 'Good Enough Gatsby',
+    page: 151,
+    ingredients: [
+      i.spirits.rye,
+      i.spirits.pear,
+      i.syrups.cinnamon,
+      i.juices.pineapple,
+      i.juices.lime,
+      i.liqueurs.fernet,
+    ],
+  },
+  {
+    name: 'Morale & Welfare',
+    page: 152,
+    ingredients: [
+      i.rums.overproof_aged_jamaican,
+      i.syrups.cinnamon,
+      i.juices.lime,
+      i.juices.grapefruit,
+      i.bitters.mole,
+    ],
   },
 ]
