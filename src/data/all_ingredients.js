@@ -27,7 +27,7 @@ export default {
   liqueurs: {
     allspice: 'allspice liqueur',
     amaro: 'amaro',
-    apricot: 'apricot',
+    apricot: 'apricot liqueur',
     banana: 'banana liqueur',
     campari: 'campari',
     coconut: 'coconut liqueur',

@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="660964e5-d061-4ff8-87c1-94ebbc28cfbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/all_drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/all_drinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/all_ingredients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/all_ingredients.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,7 @@
       <recent name="$PROJECT_DIR$/cypress/integration" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.cy:open">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -122,9 +120,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.cy:open" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.test" />
-        <item itemvalue="npm.cy:open" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +148,7 @@
       <workItem from="1609031742625" duration="5459000" />
       <workItem from="1610129135191" duration="94000" />
       <workItem from="1610761124845" duration="3300000" />
-      <workItem from="1610770953625" duration="1636000" />
+      <workItem from="1610770953625" duration="2520000" />
     </task>
     <task id="LOCAL-00001" summary="add more drinks">
       <created>1610762419337</created>
@@ -166,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610769980036</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="last of the drinks">
+      <created>1610832870990</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610832870990</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +191,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add more drinks" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more drinks" />
+    <MESSAGE value="last of the drinks" />
+    <option name="LAST_COMMIT_MESSAGE" value="last of the drinks" />
   </component>
 </project>
