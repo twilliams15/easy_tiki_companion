@@ -32,7 +32,7 @@ export class InStock extends React.Component {
   render() {
     return (
       <form id="in-stock">
-        <p className="accordion" onClick={this.toggleAccordion}>
+        <p role="button" className="accordion" onClick={this.toggleAccordion}>
           <strong>
             Current stock <em>({this.state.symbol})</em>
           </strong>
@@ -47,7 +47,7 @@ export class InStock extends React.Component {
                     id={allIngredients[c][i]}
                     type="checkbox"
                     onChange={this.props.onStockChange}
-                    checked={this.props.inStock.includes(allIngredients[c][i])}
+                    checked={this.props.inStock.includes(`+${allIngredients[c][i]}`)}
                   />
                   <label htmlFor={allIngredients[c][i]}>
                     {allIngredients[c][i]}

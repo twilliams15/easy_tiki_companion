@@ -27,15 +27,15 @@ export default function App() {
 
   function getAvailableDrinks(fromStock = stock) {
     return allDrinks.filter((d) =>
-      d.ingredients.every((i) => fromStock.includes(i)),
+      d.ingredients.every((i) => fromStock.includes(`+${i}`)),
     )
   }
 
   function handleStockChange(e) {
     let tempStock = stock
     const item = e.target
-    const addItemToTempStock = () => tempStock += item.id
-    const removeItemFromTempStock = () => tempStock = tempStock.replace(item.id, '')
+    const addItemToTempStock = () => tempStock += `+${item.id}`
+    const removeItemFromTempStock = () => tempStock = tempStock.replace(`+${item.id}`, '')
     item.checked
       ? addItemToTempStock()
       : removeItemFromTempStock()

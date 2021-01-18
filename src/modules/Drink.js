@@ -14,7 +14,7 @@ export function Drink({drink, inStock}) {
     return (
       <>
         {drink.ingredients.map((i) => (
-          <li key={i}>{inStock.includes(i) ? i : highlightListItem(i)}</li>
+          <li key={i}>{inStock.includes(`+${i}`) ? i : highlightListItem(i)}</li>
         ))}
       </>
     )
