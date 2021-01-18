@@ -46,6 +46,14 @@ footer {
   margin-top: 5rem;
 }
 
+#ignore-rums {
+  margin-left: 0.5rem;
+}
+
+#ignore-rums ~ label {
+  margin-left: 0.5rem;
+}
+
 .module {
   display: none;
 }

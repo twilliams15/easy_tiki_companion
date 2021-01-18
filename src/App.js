@@ -25,10 +25,23 @@ export default function App() {
     getAvailableDrinks(stock),
   )
 
-  function getAvailableDrinks(fromStock = stock) {
-    return allDrinks.filter((d) =>
-      d.ingredients.every((i) => fromStock.includes(`+${i}`)),
-    )
+  function getAvailableDrinks(fromStock = stock, ignoreRums) {
+    function allIngredientsInStockIgnoreRums(drink) {
+      return drink.withoutRums.every((i) => fromStock.includes(`+${i}`))
+    }
+
+    function allIngredientsInStock(drink) {
+      return drink.ingredients.every((i) => fromStock.includes(`+${i}`))
+    }
+
+    if (ignoreRums) {
+      allDrinks.forEach((drink) => {
+        drink.withoutRums = drink.ingredients.filter(i => !i.includes('rum'))
+      })
+      return allDrinks.filter(allIngredientsInStockIgnoreRums)
+    } else {
+      return allDrinks.filter(allIngredientsInStock)
+    }
   }
 
   function handleStockChange(e) {
@@ -42,6 +55,10 @@ export default function App() {
     setStock(tempStock)
     window.localStorage.setItem('easy_tiki_stock', tempStock)
     setDisplayedDrinks(getAvailableDrinks(tempStock))
+  }
+
+  function handleIgnoreRumsChange(e) {
+    setDisplayedDrinks(getAvailableDrinks(stock, e.target.checked))
   }
 
   function displayInStock() {
@@ -88,6 +105,7 @@ export default function App() {
               onMount={displayInStock}
               onStockChange={handleStockChange}
               inStock={stock}
+              ignoreRums={handleIgnoreRumsChange}
             />
           </Route>
         </Switch>

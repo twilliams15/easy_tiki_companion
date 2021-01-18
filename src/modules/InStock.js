@@ -57,6 +57,7 @@ export class InStock extends React.Component {
             })}
           </ul>
         ))}
+        <input id="ignore-rums" type="checkbox" onChange={this.props.ignoreRums}/><label htmlFor="ignore-rums">Ignore specific rums?</label>
         <p>With what you have in stock...</p>
       </form>
     )
