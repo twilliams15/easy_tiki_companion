@@ -70,7 +70,7 @@ export default [
     ],
   },
   {
-    name: 'Don’s Special Dqiquiri',
+    name: 'Don’s Special Daiquiri',
     page: 69,
     ingredients: [
       i.rums.aged_puerto_rican,

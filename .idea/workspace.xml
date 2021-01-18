@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="660964e5-d061-4ff8-87c1-94ebbc28cfbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/InStock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InStock.js" afterDir="false" />
-    </list>
+    <list default="true" id="660964e5-d061-4ff8-87c1-94ebbc28cfbe" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -235,7 +231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610991794546</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix stock bug">
+      <created>1610996999350</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610996999350</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix stock bug">
+      <created>1610997255529</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610997255529</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +274,7 @@
     <MESSAGE value="converted to react components" />
     <MESSAGE value="add insights tests" />
     <MESSAGE value="swap font" />
-    <option name="LAST_COMMIT_MESSAGE" value="swap font" />
+    <MESSAGE value="fix stock bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix stock bug" />
   </component>
 </project>
