@@ -10,7 +10,6 @@ import {SearchForm} from './modules/SearchForm'
 import {InStock} from './modules/InStock'
 import {DrinkList} from './modules/DrinkList'
 import {Insights} from './modules/Insights'
-import {Rums} from './modules/Rums'
 
 export default function App() {
   const [stock, setStock] = React.useState(
@@ -45,7 +44,6 @@ export default function App() {
     ;[
       document.getElementById('search'),
       document.getElementById('insights'),
-      document.getElementById('rums'),
     ].forEach((m) => {
       m.style.display = 'none'
     })
@@ -58,7 +56,6 @@ export default function App() {
     ;[
       document.getElementById('in-stock'),
       document.getElementById('insights'),
-      document.getElementById('rums'),
     ].forEach((m) => {
       m.style.display = 'none'
     })
@@ -71,23 +68,10 @@ export default function App() {
     ;[
       document.getElementById('search'),
       document.getElementById('in-stock'),
-      document.getElementById('rums'),
     ].forEach((m) => {
       m.style.display = 'none'
     })
     setDisplayedDrinks(findDrinksMissingOneIngredient(stock))
-  }
-
-  function displayRums() {
-    document.getElementById('rums').style.display = 'block'
-    ;[
-      document.getElementById('search'),
-      document.getElementById('in-stock'),
-      document.getElementById('insights'),
-      document.getElementById('drink-list'),
-    ].forEach((m) => {
-      m.style.display = 'none'
-    })
   }
 
   return (
@@ -98,7 +82,6 @@ export default function App() {
           <li onClick={displayInStock}>In Stock</li>
           <li onClick={displaySearch}>Search</li>
           <li onClick={displayInsights}>Insights</li>
-          <li onClick={displayRums}>Rums</li>
         </ul>
       </nav>
       <InStock
@@ -114,7 +97,6 @@ export default function App() {
       <Insights
         inStock={stock}
       />
-      <Rums />
       <DrinkList drinks={displayedDrinks} inStock={stock} />
       <footer />
     </div>
