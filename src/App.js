@@ -76,6 +76,7 @@ export default function App() {
           </Route>
           <Route path="/search">
             <SearchForm
+              onMount={displaySearch}
               onNameChange={(e) => setDisplayedDrinks(findDrinksByName(e.target.value))}
               onIngredientChange={(e) =>
                 setDisplayedDrinks(findDrinksByIngredient(e.target.value))
@@ -84,6 +85,7 @@ export default function App() {
           </Route>
           <Route path="/">
             <InStock
+              onMount={displayInStock}
               onStockChange={handleStockChange}
               inStock={stock}
             />

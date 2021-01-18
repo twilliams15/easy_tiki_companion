@@ -5,24 +5,20 @@ import {
 } from '../support/helpers'
 
 export class Insights extends React.Component {
-  constructor(props) {
-    super(props)
-    this.inStock = props.inStock
-  }
-
   componentDidMount() {
     this.props.onMount()
   }
 
   render() {
+    const {inStock} = this.props
     return (
       <div id="insights">
-        {countDrinksMissingMostCommonIngredient(this.inStock) > 1 ? (
+        {countDrinksMissingMostCommonIngredient(inStock) > 1 ? (
           <>
             <p>
               <strong>
-                With {mostCommonMissingIngredient(this.inStock)}, you could make{' '}
-                {countDrinksMissingMostCommonIngredient(this.inStock)} more drinks!
+                With {mostCommonMissingIngredient(inStock)}, you could make{' '}
+                {countDrinksMissingMostCommonIngredient(inStock)} more drinks!
               </strong>
             </p>
             <p>
